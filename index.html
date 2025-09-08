@@ -137,8 +137,17 @@
         </ul>
       </div>
       <div class="order-1 md:order-2">
-        <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow border bg-white grid place-items-center p-6" style="border-color:var(--line)">
-          <img src="logodrpaulo.png" alt="Logo Dr. Paulo Donadel" class="h-full w-auto object-contain" loading="lazy"/>
+        <div class="rounded-2xl overflow-hidden shadow border bg-white flex items-center justify-center p-4 md:p-6" style="border-color:var(--line)">
+          <picture>
+            <source srcset="./logodrpaulo.png" type="image/png">
+            <img src="./logodrpaulo.png"
+                 alt="Logo do Dr. Paulo Donadel"
+                 class="w-full h-auto object-contain max-h-72 sm:max-h-96"
+                 decoding="async"
+                 fetchpriority="high"
+                 loading="eager"
+                 onerror="this.onerror=null;this.src='logopaulo.png';"/>
+          </picture>
         </div>
       </div>
     </div>
@@ -261,4 +270,3 @@
   </script>
 </body>
 </html>
-
