@@ -29,10 +29,10 @@
   </script>
   <style>
     :root{
-      --ink:#2f2f2f;
-      --taupe:#6b5b53;
-      --sand:#f5f3f0;
-      --line:#e7e2dc;
+      --ink:#2f2f2f;      /* texto principal */
+      --taupe:#6b5b53;    /* acento quente */
+      --sand:#f5f3f0;     /* fundo claro */
+      --line:#e7e2dc;     /* linhas/bordas sutis */
     }
     .grain { background-image: radial-gradient(rgba(0,0,0,.03) 1px, transparent 1px); background-size: 6px 6px; }
     .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,.15), transparent); }
@@ -85,6 +85,24 @@
         </div>
       </div>
     </div>
+
+    <!-- Números/Indicadores -->
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <p class="text-3xl font-semibold" style="color:var(--ink)">12+</p>
+          <p class="text-sm text-zinc-500">anos de experiência</p>
+        </div>
+        <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <p class="text-3xl font-semibold" style="color:var(--ink)">1.200+</p>
+          <p class="text-sm text-zinc-500">pacientes acompanhados</p>
+        </div>
+        <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <p class="text-3xl font-semibold" style="color:var(--ink)">Telemedicina</p>
+          <p class="text-sm text-zinc-500">atendimento on-line seguro</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Sobre -->
@@ -93,20 +111,15 @@
       <div class="order-2 md:order-1">
         <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Sobre o médico</h2>
         <p class="mt-4">O <strong>Dr. Paulo Donadel</strong> é médico psiquiatra (CRM 37848 RS) com residência médica e atualização contínua. Atua com abordagem integrada, aliando psicoterapia baseada em evidências e psicofármacos quando indicados.</p>
-        <div class="mt-6 grid sm:grid-cols-3 gap-4">
-          <div class="rounded-xl border p-4" style="border-color:var(--line)">
-            <p class="text-2xl font-semibold" style="color:var(--ink)">12+</p>
-            <p class="text-sm text-zinc-500">anos de experiência clínica</p>
-          </div>
-          <div class="rounded-xl border p-4" style="border-color:var(--line)">
-            <p class="text-2xl font-semibold" style="color:var(--ink)">1.200+</p>
-            <p class="text-sm text-zinc-500">pacientes acompanhados</p>
-          </div>
-        </div>
+        <ul class="mt-4 list-disc pl-5 text-zinc-700">
+          <li>Abordagem centrada na pessoa e no vínculo terapêutico.</li>
+          <li>Planos individualizados com metas claras e acompanhamento.</li>
+          <li>Trabalho integrado com psicólogos e rede de apoio quando necessário.</li>
+        </ul>
       </div>
       <div class="order-1 md:order-2">
-        <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow border bg-white" style="border-color:var(--line)">
-          <img src="logodrpaulo.png" alt="Logo Dr. Paulo Donadel" class="h-full w-full object-contain bg-white"/>
+        <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow border bg-white grid place-items-center p-6" style="border-color:var(--line)">
+          <img src="logodrpaulo.png" alt="Logo Dr. Paulo Donadel" class="h-full w-auto object-contain" loading="lazy"/>
         </div>
       </div>
     </div>
@@ -118,31 +131,63 @@
   <section id="servicos" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Serviços</h2>
+      <p class="mt-3 text-zinc-600 max-w-2xl">Diagnóstico preciso e plano terapêutico individualizado, com foco em qualidade de vida e funcionalidade.</p>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1580281657521-54c01d2ed9a7?auto=format&fit=crop&w=800&q=80" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">Avaliação psiquiátrica</h3></div>
+          <img src="https://images.unsplash.com/photo-1580281657521-54c01d2ed9a7?auto=format&fit=crop&w=1200&q=80" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">Avaliação psiquiátrica</h3>
+            <p class="mt-1 text-sm text-zinc-600">Escuta qualificada, diagnóstico e plano terapêutico personalizado.</p>
+          </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">Ansiedade & depressão</h3></div>
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">Ansiedade & depressão</h3>
+            <p class="mt-1 text-sm text-zinc-600">Tratamento baseado em evidências, psicoterapia e medicação quando indicada.</p>
+          </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1559757175-5700dde675c5?auto=format&fit=crop&w=800&q=80" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">TDAH em adultos</h3></div>
+          <img src="https://images.unsplash.com/photo-1559757175-5700dde675c5?auto=format&fit=crop&w=1200&q=80" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">TDAH em adultos</h3>
+            <p class="mt-1 text-sm text-zinc-600">Avaliação estruturada e manejo terapêutico multimodal.</p>
+          </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1604881991720-822b646a8852?auto=format&fit=crop&w=800&q=80" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">Transtorno bipolar</h3></div>
+          <img src="https://images.unsplash.com/photo-1604881991720-822b646a8852?auto=format&fit=crop&w=1200&q=80" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">Transtorno bipolar</h3>
+            <p class="mt-1 text-sm text-zinc-600">Estabilização do humor e prevenção de recaídas.</p>
+          </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1551843078-327c5e7d4c2a?auto=format&fit=crop&w=800&q=80" alt="Dependência química" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">Dependência química</h3></div>
+          <img src="https://images.unsplash.com/photo-1551843078-327c5e7d4c2a?auto=format&fit=crop&w=1200&q=80" alt="Dependência química" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">Dependência química</h3>
+            <p class="mt-1 text-sm text-zinc-600">Estratégias de redução de danos e reabilitação com rede de apoio.</p>
+          </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.unsplash.com/photo-1588776814546-5e20eae04c44?auto=format&fit=crop&w=800&q=80" alt="Telemedicina" class="h-44 w-full object-cover"/>
-          <div class="p-5"><h3 class="text-lg font-semibold">Telemedicina</h3></div>
+          <img src="https://images.unsplash.com/photo-1588776814546-5e20eae04c44?auto=format&fit=crop&w=1200&q=80" alt="Telemedicina" class="h-44 w-full object-cover"/>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold" style="color:var(--ink)">Telemedicina</h3>
+            <p class="mt-1 text-sm text-zinc-600">Consultas on-line com sigilo e qualidade, conforme regulamentação vigente.</p>
+          </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria (fotos locais do consultório) -->
+  <section id="galeria" class="py-16 md:py-24" style="background:var(--sand)">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Galeria do consultório</h2>
+      <p class="mt-3 text-zinc-600 max-w-2xl">Fotos reais do consultório (sem identificação de pacientes), em conformidade com o CFM e a LGPD.</p>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img class="h-64 w-full object-cover rounded-xl border" style="border-color:var(--line)" src="consultorio1.jpg" alt="Consultório — recepção" loading="lazy"/>
+        <img class="h-64 w-full object-cover rounded-xl border" style="border-color:var(--line)" src="consultorio2.jpg" alt="Consultório — sala de atendimento" loading="lazy"/>
+        <img class="h-64 w-full object-cover rounded-xl border" style="border-color:var(--line)" src="consultorio3.jpg" alt="Consultório — detalhes" loading="lazy"/>
       </div>
     </div>
   </section>
@@ -157,15 +202,16 @@
           <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta" class="inline-flex items-center gap-2 rounded-full px-5 py-3" style="background:var(--ink); color:#fff">Agendar pelo WhatsApp</a>
           <a href="mailto:contato@exemplo.com" class="inline-flex items-center gap-2 rounded-full px-5 py-3" style="border:1px solid var(--taupe); color:var(--ink)">contato@exemplo.com</a>
         </div>
+        <p class="mt-6 text-sm text-zinc-600">Em caso de emergência psiquiátrica, procure atendimento imediato (SAMU 192) ou o <a class="underline" href="https://www.cvv.org.br/" target="_blank" rel="noopener">CVV 188</a>.</p>
       </div>
       <div class="rounded-2xl border overflow-hidden shadow bg-white p-6" style="border-color:var(--line)">
         <form class="grid gap-4">
           <div class="grid md:grid-cols-2 gap-4">
-            <input class="rounded-lg border px-4 py-3" placeholder="Nome" />
-            <input class="rounded-lg border px-4 py-3" placeholder="E-mail" type="email" />
+            <input class="rounded-lg border px-4 py-3" style="border-color:var(--line)" placeholder="Nome" />
+            <input class="rounded-lg border px-4 py-3" style="border-color:var(--line)" placeholder="E-mail" type="email" />
           </div>
-          <input class="rounded-lg border px-4 py-3" placeholder="Telefone" />
-          <textarea class="rounded-lg border px-4 py-3" rows="4" placeholder="Mensagem"></textarea>
+          <input class="rounded-lg border px-4 py-3" style="border-color:var(--line)" placeholder="Telefone" />
+          <textarea class="rounded-lg border px-4 py-3" rows="4" style="border-color:var(--line)" placeholder="Mensagem"></textarea>
           <button class="rounded-lg px-5 py-3" style="background:var(--taupe); color:#fff">Enviar mensagem</button>
         </form>
       </div>
