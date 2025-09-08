@@ -33,6 +33,7 @@
       --taupe:#6b5b53;    /* acento quente */
       --sand:#f5f3f0;     /* fundo claro */
       --line:#e7e2dc;     /* linhas/bordas sutis */
+      --wa:#25d366;       /* verde WhatsApp (apenas ícone/acento) */
     }
     .grain { background-image: radial-gradient(rgba(0,0,0,.03) 1px, transparent 1px); background-size: 6px 6px; }
     .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,.15), transparent); }
@@ -63,9 +64,9 @@
         <a href="#sobre" class="hover:opacity-80" style="color:var(--ink)">Sobre</a>
         <a href="#servicos" class="hover:opacity-80" style="color:var(--ink)">Serviços</a>
         <a href="#galeria" class="hover:opacity-80" style="color:var(--ink)">Galeria</a>
-        <a href="#contato" class="hover:opacity-80" style="color:var(--ink)">Contato</a>
+        <a href="#contato" class="hover:opacity-80" style="color:var(--ink)">WhatsApp</a>
         <a href="https://wa.me/5553991633352?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" class="ml-2 inline-flex items-center gap-2 rounded-full px-4 py-2 hover:shadow" style="border:1px solid var(--taupe); color:var(--ink)">
-          WhatsApp
+          Agendar
         </a>
       </nav>
     </div>
@@ -76,15 +77,30 @@
     <div class="absolute inset-0 -z-10" style="background: linear-gradient(to bottom, var(--sand), #ffffff)"></div>
     <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
+        <span class="inline-flex items-center gap-2 font-medium tracking-wide" style="color:var(--taupe)">
+          <span class="h-1.5 w-1.5 rounded-full" style="background:var(--taupe)"></span>
+          Excelência médica com acolhimento e ciência
+        </span>
         <h1 class="mt-4 font-serif text-4xl md:text-5xl" style="color:var(--ink)">Saúde mental com segurança, acolhimento e respeito ao seu tempo.</h1>
         <p class="mt-4 leading-relaxed max-w-xl text-zinc-600">Psiquiatria clínica para adultos, com diagnóstico preciso, tratamento baseado em evidências e acompanhamento próximo — presencial ou por telemedicina.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="https://wa.me/5553991633352?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" class="inline-flex items-center gap-2 rounded-full px-5 py-3" style="background:var(--ink); color:#fff">Agendar pelo WhatsApp</a>
+          <a href="https://wa.me/5553991633352?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" class="inline-flex items-center gap-2 rounded-full px-5 py-3 hover:shadow" style="background:var(--ink); color:#fff">
+            <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="-ml-1"><path d="M19.11 17.32c-.26-.13-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.13-.17.26-.66.82-.81.99-.15.17-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.27-.77-.68-1.29-1.52-1.44-1.78-.15-.26-.02-.4.11-.53.11-.11.26-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.56-1.37-.77-1.88-.2-.48-.41-.41-.57-.42-.15-.01-.32-.01-.49-.01-.17 0-.45.06-.68.32-.23.26-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.17 1.79 2.74 4.34 3.84.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.49-.29z" fill="#fff"/><path d="M16.02 3C8.85 3 3 8.72 3 15.74c0 2.3.64 4.45 1.77 6.29L3 29l7.19-1.86c1.75.96 3.76 1.5 5.83 1.5 7.17 0 13.02-5.72 13.02-12.74S23.18 3 16.02 3zm7.59 18.59c-.32.9-1.57 1.64-2.22 1.75-.56.09-1.27.13-2.06-.13-.47-.15-1.07-.35-1.85-.68-3.25-1.4-5.36-4.64-5.52-4.86-.16-.22-1.32-1.75-1.32-3.34 0-1.59.82-2.37 1.12-2.69.3-.32.66-.4.88-.4.22 0 .44 0 .63.01.2.01.47-.08.73.56.26.64.88 2.18.96 2.34.08.16.13.35.02.56-.11.22-.17.35-.34.54-.17.19-.29.33-.41.53-.13.2-.27.41-.11.72.16.32.71 1.16 1.52 1.88 1.05.93 1.94 1.23 2.26 1.37.32.13.5.11.68-.07.19-.19.77-.9.98-1.21.22-.32.41-.26.68-.15.27.1 1.71.8 2.01.95.3.15.5.22.58.34.08.13.08.98-.24 1.88z" fill="#fff" opacity=".45"/></svg>
+            Agendar pelo WhatsApp
+          </a>
         </div>
       </div>
       <div class="relative">
         <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow border" style="border-color:var(--line); background:#fff">
           <img src="drpaulo.jpg" alt="Dr. Paulo Donadel" class="h-full w-full object-cover" loading="eager"/>
+        </div>
+        <!-- Card com estrelinha -->
+        <div class="absolute -bottom-6 -left-6 bg-white shadow border rounded-2xl p-4 flex items-center gap-3" style="border-color:var(--line)">
+          <div class="h-10 w-10 rounded-full grid place-content-center" style="background:var(--sand); color:var(--taupe)">★</div>
+          <div class="text-sm">
+            <p class="font-semibold" style="color:var(--ink)">+1.200 pacientes acompanhados</p>
+            <p class="text-zinc-500">Consultas presenciais e telemedicina</p>
+          </div>
         </div>
       </div>
     </div>
@@ -93,14 +109,17 @@
     <div class="max-w-7xl mx-auto px-6 pb-12">
       <div class="grid sm:grid-cols-3 gap-4">
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">12+</p>
           <p class="text-sm text-zinc-500">anos de experiência</p>
         </div>
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">1.200+</p>
           <p class="text-sm text-zinc-500">pacientes acompanhados</p>
         </div>
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
+          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">Telemedicina</p>
           <p class="text-sm text-zinc-500">atendimento on-line seguro</p>
         </div>
@@ -130,49 +149,49 @@
 
   <div class="divider max-w-7xl mx-auto"></div>
 
-  <!-- Serviços (imagens de outra fonte: Pexels) -->
+  <!-- Serviços (com fallback local e referrerpolicy) -->
   <section id="servicos" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Serviços</h2>
       <p class="mt-3 text-zinc-600 max-w-2xl">Diagnóstico preciso e plano terapêutico individualizado, com foco em qualidade de vida e funcionalidade.</p>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/5699452/pexels-photo-5699452.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7578808/pexels-photo-7578808.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio1.jpg';" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Avaliação psiquiátrica</h3>
             <p class="mt-1 text-sm text-zinc-600">Escuta qualificada, diagnóstico e plano terapêutico personalizado.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio2.jpg';" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Ansiedade & depressão</h3>
             <p class="mt-1 text-sm text-zinc-600">Tratamento baseado em evidências, psicoterapia e medicação quando indicada.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/8376230/pexels-photo-8376230.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/8376230/pexels-photo-8376230.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio3.jpg';" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">TDAH em adultos</h3>
             <p class="mt-1 text-sm text-zinc-600">Avaliação estruturada e manejo terapêutico multimodal.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/7176313/pexels-photo-7176313.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7176313/pexels-photo-7176313.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio1.jpg';" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Transtorno bipolar</h3>
             <p class="mt-1 text-sm text-zinc-600">Estabilização do humor e prevenção de recaídas.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/5543635/pexels-photo-5543635.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Dependência química" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/5543635/pexels-photo-5543635.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio2.jpg';" alt="Dependência química" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Dependência química</h3>
             <p class="mt-1 text-sm text-zinc-600">Estratégias de redução de danos e reabilitação com rede de apoio.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Telemedicina" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio3.jpg';" alt="Telemedicina" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Telemedicina</h3>
             <p class="mt-1 text-sm text-zinc-600">Consultas on-line com sigilo e qualidade, conforme regulamentação vigente.</p>
@@ -195,18 +214,32 @@
     </div>
   </section>
 
-  <!-- Contato: somente WhatsApp -->
-  <section id="contato" class="py-16 md:py-24" style="background:#faf9f7">
+  <!-- Contato: WhatsApp refinado -->
+  <section id="contato" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Fale pelo WhatsApp</h2>
-        <p class="mt-3 text-zinc-700 max-w-xl">Atendimento presencial e por telemedicina. Respostas no horário comercial.</p>
-        <a href="https://wa.me/5553991633352?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta" class="mt-6 inline-flex items-center gap-3 rounded-full px-6 py-3" style="background:var(--ink); color:#fff">
-          📱 (53) 99163-3352 — Enviar mensagem
-        </a>
+        <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Agendamentos via WhatsApp</h2>
+        <p class="mt-3 text-zinc-700 max-w-xl">Mensagem rápida, confirmação de horário e orientações pré-consulta.</p>
+        <div class="mt-6 flex items-center gap-4">
+          <a href="https://wa.me/5553991633352?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta" class="inline-flex items-center gap-3 rounded-full px-6 py-3 hover:shadow" style="background:var(--ink); color:#fff">
+            <span class="inline-flex items-center justify-center h-6 w-6 rounded-full" style="background:var(--wa)">
+              <svg viewBox="0 0 32 32" width="14" height="14" fill="#fff" aria-hidden="true"><path d="M19.11 17.32c-.26-.13-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.13-.17.26-.66.82-.81.99-.15.17-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.27-.77-.68-1.29-1.52-1.44-1.78-.15-.26-.02-.4.11-.53.11-.11.26-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.56-1.37-.77-1.88-.2-.48-.41-.41-.57-.42-.15-.01-.32-.01-.49-.01-.17 0-.45.06-.68.32-.23.26-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.17 1.79 2.74 4.34 3.84.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.49-.29z"/></svg>
+            </span>
+            <span>(53) 99163-3352 — Falar agora</span>
+          </a>
+          <button id="copyBtn" class="rounded-full px-5 py-3 border hover:shadow" style="border-color:var(--line); color:var(--ink)">Copiar número</button>
+        </div>
+        <p class="mt-3 text-sm text-zinc-500">Horário de atendimento: seg–sex, 9h às 18h. Fora do horário, sua mensagem será respondida no próximo dia útil.</p>
       </div>
-      <div class="rounded-2xl border overflow-hidden shadow bg-white p-6 text-zinc-600" style="border-color:var(--line)">
-        <p>Endereço e demais informações podem ser enviados pelo WhatsApp mediante solicitação.</p>
+      <div class="rounded-2xl border overflow-hidden shadow bg-white p-6" style="border-color:var(--line)">
+        <div class="flex items-start gap-4">
+          <div class="h-10 w-10 rounded-full grid place-content-center" style="background:var(--sand); color:var(--taupe)">★</div>
+          <div>
+            <p class="font-semibold" style="color:var(--ink)">Dica</p>
+            <p class="text-zinc-600 text-sm">Ao clicar em “Falar agora”, a conversa abre com uma mensagem pronta. Se preferir, copie o número e chame direto pelo seu celular.</p>
+            <a href="tel:+5553991633352" class="inline-block mt-3 underline">Ligar para (53) 99163-3352</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -219,6 +252,15 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('copyBtn')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('+55 53 99163-3352');
+        const b = document.getElementById('copyBtn');
+        const prev = b.textContent;
+        b.textContent = 'Copiado!';
+        setTimeout(()=> b.textContent = prev, 1500);
+      } catch(e) { alert('Não foi possível copiar.'); }
+    });
   </script>
 </body>
 </html>
