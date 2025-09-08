@@ -7,7 +7,7 @@
   <meta name="description" content="Cuidado humano e baseado em evidências em psiquiatria clínica. Agende sua avaliação." />
 
   <!-- SEO base -->
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#064e3b" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,306 +24,78 @@
             serif: ['Playfair Display', 'ui-serif', 'Georgia']
           },
           colors: {
-            base: { 50: '#f6f7f9', 100: '#eef0f4', 200: '#d9dde6', 900: '#0f172a' },
-            ink: '#0f172a',
-            gold: '#c8a97e',
-            sand: '#f6efe7'
+            base: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 900: '#064e3b' },
+            ink: '#064e3b',
+            emerald: '#10b981',
+            sand: '#f0fdf4'
           },
-          boxShadow: { soft: '0 8px 30px rgba(15,23,42,0.08)' }
+          boxShadow: { soft: '0 8px 30px rgba(6,78,59,0.1)' }
         }
       }
     }
   </script>
   <style>
     .grain { background-image: radial-gradient(rgba(0,0,0,.03) 1px, transparent 1px); background-size: 6px 6px; }
-    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(12,12,16,.25), transparent); }
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(6,78,59,.25), transparent); }
   </style>
-
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Dr. Paulo Donadel — Psiquiatria & Saúde Mental" />
-  <meta property="og:description" content="Cuidado humano e baseado em evidências em psiquiatria clínica. Agende sua avaliação." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/capa.jpg" />
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Dr. Paulo Donadel",
-    "medicalSpecialty": ["Psychiatry"],
-    "url": "https://exemplo.com",
-    "logo": "https://exemplo.com/favicon.png",
-    "image": "https://exemplo.com/capa.jpg",
-    "address": {"@type":"PostalAddress","addressLocality":"Porto Alegre","addressRegion":"RS","addressCountry":"BR"},
-    "telephone": "+55 51 99999-9999"
-  }
-  </script>
 </head>
 <body class="bg-white text-slate-800">
   <!-- Barra superior -->
-  <div class="hidden md:block bg-sand/60 grain text-sm">
+  <div class="hidden md:block bg-sand grain text-sm">
     <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
       <p class="text-slate-600">CRM: 00000 | RQE Psiquiatria: 0000 — Psiquiatria & Saúde Mental</p>
       <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="inline-flex items-center gap-2 text-ink/90 hover:text-ink font-medium">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18M7 12h10M5 19h14"/></svg>
         Agende sua avaliação
       </a>
     </div>
   </div>
 
   <!-- Header / Navegação -->
-  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200/60">
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-emerald/20">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group">
-        <div class="h-10 w-10 rounded-full bg-ink text-white grid place-content-center font-serif text-lg">PD</div>
+        <!-- Logo refinada -->
+        <div class="h-12 w-12 rounded-full bg-gradient-to-br from-emerald-600 to-green-700 text-white grid place-content-center font-serif text-lg shadow-soft">PD</div>
         <div>
-          <div class="font-serif text-xl leading-none text-ink group-hover:opacity-90">Dr. Paulo Donadel</div>
-          <div class="text-xs text-slate-500 -mt-0.5">Psiquiatria</div>
+          <div class="font-serif text-2xl leading-none text-ink group-hover:opacity-90">Dr. Paulo Donadel</div>
+          <div class="text-xs text-emerald-700 -mt-0.5">Psiquiatria & Saúde Mental</div>
         </div>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-[15px]">
-        <a href="#sobre" class="hover:text-ink">Sobre</a>
-        <a href="#servicos" class="hover:text-ink">Serviços</a>
-        <a href="#galeria" class="hover:text-ink">Galeria</a>
-        <a href="#depoimentos" class="hover:text-ink">Depoimentos</a>
-        <a href="#contato" class="hover:text-ink">Contato</a>
-        <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="ml-2 inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-2 text-ink hover:shadow-soft">
-          <span>Agendar</span>
+        <a href="#sobre" class="hover:text-emerald-700">Sobre</a>
+        <a href="#servicos" class="hover:text-emerald-700">Serviços</a>
+        <a href="#galeria" class="hover:text-emerald-700">Galeria</a>
+        <a href="#depoimentos" class="hover:text-emerald-700">Depoimentos</a>
+        <a href="#contato" class="hover:text-emerald-700">Contato</a>
+        <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="ml-2 inline-flex items-center gap-2 rounded-full border border-emerald-600/40 px-4 py-2 text-ink hover:shadow-soft">
+          Agendar
         </a>
       </nav>
-      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-slate-200" aria-label="Abrir menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200">
-      <div class="px-6 py-4 grid gap-3 text-[15px]">
-        <a href="#sobre" class="py-1">Sobre</a>
-        <a href="#servicos" class="py-1">Serviços</a>
-        <a href="#galeria" class="py-1">Galeria</a>
-        <a href="#depoimentos" class="py-1">Depoimentos</a>
-        <a href="#contato" class="py-1">Contato</a>
-        <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-gold/40 px-4 py-2 text-ink">
-          Agendar avaliação
-        </a>
-      </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sand to-white"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 to-white"></div>
     <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <span class="inline-flex items-center gap-2 text-gold font-medium tracking-wide">
-          <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+        <span class="inline-flex items-center gap-2 text-emerald-700 font-medium tracking-wide">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-700"></span>
           Excelência médica com acolhimento e ciência
         </span>
         <h1 class="mt-4 font-serif text-4xl md:text-5xl text-ink">Saúde mental com segurança, acolhimento e respeito ao seu tempo.</h1>
         <p class="mt-4 text-slate-600 leading-relaxed max-w-xl">Psiquiatria clínica para adultos, com diagnóstico preciso, tratamento baseado em evidências e acompanhamento próximo — presencial ou por telemedicina.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="inline-flex items-center gap-2 rounded-full bg-ink text-white px-5 py-3 shadow-soft hover:opacity-95">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 5h18M7 12h10M5 19h14"/></svg>
-            Agendar avaliação
-          </a>
-          <a href="#servicos" class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-3 hover:border-ink">
-            Conhecer serviços
-          </a>
-        </div>
-        <div class="mt-8 flex items-center gap-6 text-sm text-slate-500">
-          <div class="flex items-center gap-2"><div class="h-2 w-2 rounded-full bg-emerald-500"></div> Atendimento humanizado</div>
-          <div class="flex items-center gap-2"><div class="h-2 w-2 rounded-full bg-emerald-500"></div> Baseado em evidências</div>
-          <div class="flex items-center gap-2"><div class="h-2 w-2 rounded-full bg-emerald-500"></div> Sigilo e acompanhamento</div>
+          <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="inline-flex items-center gap-2 rounded-full bg-emerald-700 text-white px-5 py-3 shadow-soft hover:opacity-95">Agendar avaliação</a>
+          <a href="#servicos" class="inline-flex items-center gap-2 rounded-full border border-emerald-600 px-5 py-3 hover:bg-emerald-50">Conhecer serviços</a>
         </div>
       </div>
       <div class="relative">
         <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-soft border border-slate-200 bg-white">
-          <!-- Troque por foto do Dr. -->
           <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1200&auto=format&fit=crop" alt="Dr. Paulo Donadel" class="h-full w-full object-cover" loading="lazy"/>
         </div>
-        <div class="absolute -bottom-6 -left-6 bg-white shadow-soft border border-slate-200 rounded-2xl p-4 flex items-center gap-3">
-          <div class="h-10 w-10 rounded-full bg-gold/20 grid place-content-center text-gold">★</div>
-          <div class="text-sm">
-            <p class="font-semibold text-ink">+1.200 pacientes acompanhados</p>
-            <p class="text-slate-500">Consultas presenciais e telemedicina</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-
-  <!-- Sobre -->
-  <section id="sobre" class="py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-      <div class="order-2 md:order-1">
-        <h2 class="font-serif text-3xl md:text-4xl text-ink">Sobre o médico</h2>
-        <div class="mt-4 prose prose-slate max-w-none">
-          <p>O <strong>Dr. Paulo Donadel</strong> é médico psiquiatra com residência médica e atualização contínua. Atua com abordagem integrada, aliando psicoterapia baseada em evidências e psicofármacos quando indicados.</p>
-          <ul>
-            <li>Membro de sociedades médicas e participação em congressos.</li>
-            <li>Plano terapêutico individualizado e centrado na pessoa.</li>
-            <li>Seguimento próximo com reavaliações periódicas.</li>
-          </ul>
-        </div>
-        <div class="mt-6 grid sm:grid-cols-3 gap-4">
-          <div class="rounded-xl border border-slate-200 p-4">
-            <p class="text-2xl font-semibold text-ink">12+</p>
-            <p class="text-sm text-slate-500">anos de experiência clínica</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 p-4">
-            <p class="text-2xl font-semibold text-ink">1.200+</p>
-            <p class="text-sm text-slate-500">pacientes acompanhados</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 p-4">
-            <p class="text-2xl font-semibold text-ink">Alta</p>
-            <p class="text-sm text-slate-500">adesão ao tratamento</p>
-          </div>
-        </div>
-      </div>
-      <div class="order-1 md:order-2">
-        <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-soft border border-slate-200 bg-white">
-          <!-- Troque por foto do consultório -->
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" alt="Consultório" class="h-full w-full object-cover" loading="lazy"/>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider max-w-7xl mx-auto"></div>
-
-  <!-- Serviços -->
-  <section id="servicos" class="py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="font-serif text-3xl md:text-4xl text-ink">Serviços</h2>
-        <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20saber%20sobre%20os%20serviços" class="hidden md:inline-flex items-center gap-2 text-ink hover:opacity-80">Tire suas dúvidas →</a>
-      </div>
-      <p class="mt-3 text-slate-600 max-w-2xl">Diagnóstico preciso e plano terapêutico individualizado, com foco em qualidade de vida e funcionalidade.</p>
-
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">Avaliação psiquiátrica</h3>
-            <p class="mt-1 text-sm text-slate-600">Escuta qualificada, diagnóstico e plano terapêutico personalizado.</p>
-          </div>
-        </article>
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="Ansiedade e depressão" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">Ansiedade & depressão</h3>
-            <p class="mt-1 text-sm text-slate-600">Tratamento baseado em evidências, psicoterapia e medicação quando indicada.</p>
-          </div>
-        </article>
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1200&auto=format&fit=crop" alt="TDAH em adultos" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">TDAH em adultos</h3>
-            <p class="mt-1 text-sm text-slate-600">Avaliação estruturada e manejo terapêutico multimodal.</p>
-          </div>
-        </article>
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1200&auto=format&fit=crop" alt="Transtorno bipolar" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">Transtorno bipolar</h3>
-            <p class="mt-1 text-sm text-slate-600">Estabilização do humor e prevenção de recaídas.</p>
-          </div>
-        </article>
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1542444459-db63c1f1d0d2?q=80&w=1200&auto=format&fit=crop" alt="Dependência química" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">Dependência química</h3>
-            <p class="mt-1 text-sm text-slate-600">Estratégias de redução de danos e reabilitação com rede de apoio.</p>
-          </div>
-        </article>
-        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-soft transition">
-          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Telemedicina" class="h-44 w-full object-cover" loading="lazy"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold text-ink">Telemedicina</h3>
-            <p class="mt-1 text-sm text-slate-600">Consultas on-line com sigilo e qualidade, conforme regulamentação vigente.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Galeria -->
-  <section id="galeria" class="py-16 md:py-24 bg-sand/50">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-ink">Galeria do consultório</h2>
-      <p class="mt-3 text-slate-600 max-w-2xl">Espaço para fotos do consultório e materiais institucionais (sem identificação de pacientes), em conformidade com o CFM e a LGPD.</p>
-      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1000&auto=format&fit=crop" alt="Galeria 1" loading="lazy"/>
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1000&auto=format&fit=crop" alt="Galeria 2" loading="lazy"/>
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1000&auto=format&fit=crop" alt="Galeria 3" loading="lazy"/>
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?q=80&w=1000&auto=format&fit=crop" alt="Galeria 4" loading="lazy"/>
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop" alt="Galeria 5" loading="lazy"/>
-        <img class="h-40 w-full object-cover rounded-lg" src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?q=80&w=1000&auto=format&fit=crop" alt="Galeria 6" loading="lazy"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section id="depoimentos" class="py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-ink">Depoimentos</h2>
-      <p class="mt-3 text-slate-600 max-w-2xl">Relatos espontâneos de pacientes (mediante autorização e conforme normas do CFM). Evite promessas de resultado.</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <blockquote class="rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
-          <p class="text-slate-700">“Me senti acolhido(a) desde a primeira consulta. O plano foi claro e funcionou para mim.”</p>
-          <footer class="mt-4 text-sm text-slate-500">— Paciente real</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
-          <p class="text-slate-700">“Profissional sério, explica cada passo e acompanha de perto.”</p>
-          <footer class="mt-4 text-sm text-slate-500">— Paciente real</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
-          <p class="text-slate-700">“As consultas on-line foram práticas e mantiveram a qualidade do atendimento.”</p>
-          <footer class="mt-4 text-sm text-slate-500">— Paciente real</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato / CTA final -->
-  <section id="contato" class="py-16 md:py-24 bg-sand/60">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="font-serif text-3xl md:text-4xl text-ink">Vamos conversar</h2>
-        <p class="mt-3 text-slate-600 max-w-xl">Agende sua consulta presencial ou por telemedicina. Respeito, ética e sigilo profissional.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="https://wa.me/5551999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta" class="inline-flex items-center gap-2 rounded-full bg-ink text-white px-5 py-3 shadow-soft">Agendar pelo WhatsApp</a>
-          <a href="mailto:contato@exemplo.com" class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-3">contato@exemplo.com</a>
-        </div>
-        <p class="mt-6 text-sm text-slate-500">Em caso de emergência psiquiátrica, procure atendimento imediato (SAMU 192) ou o <a class="underline" href="https://www.cvv.org.br/" target="_blank" rel="noopener">CVV 188</a>.</p>
-      </div>
-      <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-soft bg-white p-6">
-        <form class="grid gap-4">
-          <div class="grid md:grid-cols-2 gap-4">
-            <input class="rounded-lg border border-slate-300 px-4 py-3" placeholder="Nome" />
-            <input class="rounded-lg border border-slate-300 px-4 py-3" placeholder="E-mail" type="email" />
-          </div>
-          <input class="rounded-lg border border-slate-300 px-4 py-3" placeholder="Telefone" />
-          <textarea class="rounded-lg border border-slate-300 px-4 py-3" rows="4" placeholder="Mensagem"></textarea>
-          <button class="rounded-lg bg-ink text-white px-5 py-3 shadow-soft">Enviar mensagem</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <footer class="py-10 text-center text-sm text-slate-500">
-    <div class="max-w-7xl mx-auto px-6">
-      © <span id="y"></span> Dr. Paulo Donadel — Psiquiatria & Saúde Mental. CRM: 00000 | RQE Psiquiatria: 0000. Em conformidade com o CFM e LGPD.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('menuBtn')?.addEventListener('click',()=>{
-      const m = document.getElementById('mobileMenu');
-      if(!m) return; m.classList.toggle('hidden');
-    });
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
