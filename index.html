@@ -94,7 +94,7 @@
         <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow border" style="border-color:var(--line); background:#fff">
           <img src="drpaulo.jpg" alt="Dr. Paulo Donadel" class="h-full w-full object-cover" loading="eager"/>
         </div>
-        <!-- Card com estrelinha -->
+        <!-- Card com estrelinha (única) -->
         <div class="absolute -bottom-6 -left-6 bg-white shadow border rounded-2xl p-4 flex items-center gap-3" style="border-color:var(--line)">
           <div class="h-10 w-10 rounded-full grid place-content-center" style="background:var(--sand); color:var(--taupe)">★</div>
           <div class="text-sm">
@@ -105,21 +105,18 @@
       </div>
     </div>
 
-    <!-- Números/Indicadores -->
+    <!-- Números/Indicadores (sem estrelas) -->
     <div class="max-w-7xl mx-auto px-6 pb-12">
       <div class="grid sm:grid-cols-3 gap-4">
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
-          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">12+</p>
           <p class="text-sm text-zinc-500">anos de experiência</p>
         </div>
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
-          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">1.200+</p>
           <p class="text-sm text-zinc-500">pacientes acompanhados</p>
         </div>
         <div class="rounded-xl border p-5 text-center" style="border-color:var(--line)">
-          <div class="mb-1">★</div>
           <p class="text-3xl font-semibold" style="color:var(--ink)">Telemedicina</p>
           <p class="text-sm text-zinc-500">atendimento on-line seguro</p>
         </div>
@@ -149,49 +146,49 @@
 
   <div class="divider max-w-7xl mx-auto"></div>
 
-  <!-- Serviços (com fallback local e referrerpolicy) -->
+  <!-- Serviços (duas imagens trocadas + fallback em 2 etapas) -->
   <section id="servicos" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="font-serif text-3xl md:text-4xl" style="color:var(--ink)">Serviços</h2>
       <p class="mt-3 text-zinc-600 max-w-2xl">Diagnóstico preciso e plano terapêutico individualizado, com foco em qualidade de vida e funcionalidade.</p>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7578808/pexels-photo-7578808.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio1.jpg';" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7578808/pexels-photo-7578808.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/5413271/pexels-photo-5413271.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio1.jpg';}" alt="Avaliação psiquiátrica" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Avaliação psiquiátrica</h3>
             <p class="mt-1 text-sm text-zinc-600">Escuta qualificada, diagnóstico e plano terapêutico personalizado.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio2.jpg';" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio2.jpg';}" alt="Ansiedade e depressão" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Ansiedade & depressão</h3>
             <p class="mt-1 text-sm text-zinc-600">Tratamento baseado em evidências, psicoterapia e medicação quando indicada.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/8376230/pexels-photo-8376230.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio3.jpg';" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/5726697/pexels-photo-5726697.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/4148862/pexels-photo-4148862.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio3.jpg';}" alt="TDAH em adultos" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">TDAH em adultos</h3>
             <p class="mt-1 text-sm text-zinc-600">Avaliação estruturada e manejo terapêutico multimodal.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7176313/pexels-photo-7176313.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio1.jpg';" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7176313/pexels-photo-7176313.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/4100769/pexels-photo-4100769.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio1.jpg';}" alt="Transtorno bipolar" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Transtorno bipolar</h3>
             <p class="mt-1 text-sm text-zinc-600">Estabilização do humor e prevenção de recaídas.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/5543635/pexels-photo-5543635.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio2.jpg';" alt="Dependência química" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/8989729/pexels-photo-8989729.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/6942040/pexels-photo-6942040.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio2.jpg';}" alt="Dependência química" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Dependência química</h3>
             <p class="mt-1 text-sm text-zinc-600">Estratégias de redução de danos e reabilitação com rede de apoio.</p>
           </div>
         </article>
         <article class="rounded-2xl border overflow-hidden bg-white" style="border-color:var(--line)">
-          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="this.onerror=null;this.src='consultorio3.jpg';" alt="Telemedicina" class="h-44 w-full object-cover"/>
+          <img referrerpolicy="no-referrer" src="https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.pexels.com/photos/4226215/pexels-photo-4226215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop';}else{this.onerror=null;this.src='consultorio3.jpg';}" alt="Telemedicina" class="h-44 w-full object-cover"/>
           <div class="p-5">
             <h3 class="text-lg font-semibold" style="color:var(--ink)">Telemedicina</h3>
             <p class="mt-1 text-sm text-zinc-600">Consultas on-line com sigilo e qualidade, conforme regulamentação vigente.</p>
@@ -233,7 +230,7 @@
       </div>
       <div class="rounded-2xl border overflow-hidden shadow bg-white p-6" style="border-color:var(--line)">
         <div class="flex items-start gap-4">
-          <div class="h-10 w-10 rounded-full grid place-content-center" style="background:var(--sand); color:var(--taupe)">★</div>
+          <div class="h-10 w-10 rounded-full grid place-content-center text-sm font-semibold" style="background:var(--sand); color:var(--taupe)">i</div>
           <div>
             <p class="font-semibold" style="color:var(--ink)">Dica</p>
             <p class="text-zinc-600 text-sm">Ao clicar em “Falar agora”, a conversa abre com uma mensagem pronta. Se preferir, copie o número e chame direto pelo seu celular.</p>
